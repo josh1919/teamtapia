@@ -1,0 +1,158 @@
+html{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height: 100%;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+header{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: red;
+	color: white;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	/*display: inherit;*/
+	flex-wrap:inherit;
+	padding-left:10px;
+	padding-right: 10px;
+}
+
+
+img, h1, h2, h3{
+	width:100%;
+}
+
+h1{
+	text-align: center;
+}
+
+a{
+	height:48px;
+	width: 48px;
+}
+
+.services_container{
+	box-sizing:border-box;
+	border: 3px solid red;
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+
+}
+
+.service_type{
+	width: 100%;
+}
+.service_arrow{
+	height:15px;
+	width:16px;
+	float: right;
+	padding-right: 25px;
+}
+
+.phone{	
+	width: 100%;
+	box-sizing:border-box;
+	border: 3px solid red;
+	text-align: center;
+}
+
+.bodyWrapper {
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo{
+	width: 100%;
+}
+
+#header_contact_us{
+	float: right;
+	text-align: right;
+}
+
+#header_contact_info{
+	display: none;
+	text-align: right;
+	background-color: red;
+	border:3px solid black;
+	border-top: none;
+	position: relative;
+	padding:5px;
+}
+
+/*
+*
+*
+* Services
+* 
+*
+*
+*/
+
+
+/*
+*
+*
+*
+* Media queries (query)
+*
+*
+*/
+@media screen and (min-width: 650px){
+	.bodyWrapper{
+		width:650px;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	.service_type{
+		width:40%;
+		display: block;
+	}
+	.logo_wrapper{
+		display: inherit;
+		flex-wrap: inherit;
+	}
+	.logo{
+		width: 60%;
+		height: 100%;
+	}
+	.logo_text{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 649px){
+
+	.service_type{
+		padding-left:10px;
+		border: 2px solid white;
+		background-color: #FF8080;
+	}
+	#plumbing_services li{
+		display:none;
+	}
+
+	#construction_services li {
+		display:none;
+	}
+}
+
+@media screen and (min-width: 950px){
+	header{
+		width:950px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

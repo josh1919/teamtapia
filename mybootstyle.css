@@ -1,0 +1,21 @@
+.jumbotron{
+	
+}
+
+.info{
+	padding:25px;
+	border: 4px solid #e93131;
+	border-radius: 6px;	
+	margin-bottom: 10px;
+}
+
+#bottom-line{
+	border-bottom: 4px solid red;
+	border-radius: 6px;
+}
+
+#top-line{
+	padding:5px;
+	border-top: 4px solid red;
+	border-radius: 6px;
+}
